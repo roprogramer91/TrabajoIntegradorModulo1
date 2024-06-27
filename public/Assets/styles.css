@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Para ocupar al menos todo el alto de la pantalla */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    max-width: 600px; /* Ancho máximo del contenido */
+    width: 100%;
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo de la cabecera */
+h1 {
+    background-color: #3b5998; /* Azul de Facebook */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0;
+}
+
+/* Estilo de la lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo de cada elemento de lista */
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea separadora gris */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Estilo para el título dentro de la lista */
+li strong {
+    color: #3b5998; /* Azul de Facebook */
+}
+
+
+.btn-lista {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1877f2; /* Azul similar a Facebook */
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none; /* Quitar subrayado si es un enlace */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn-lista:hover {
+    background-color: #0e5a94; /* Cambio de color al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .btn-lista {
+        font-size: 14px; /* Tamaño de fuente más pequeño en dispositivos móviles */
+    }
+}
