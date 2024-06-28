@@ -174,3 +174,53 @@ in APPPATH\Views\home\detallesView.php on line 11.
  9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-06-27 18:36:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/MySQLi/Connection.php(187): mysqli->real_connect()
+#1 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/app/Models/productosModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/app/Controllers/productosController.php(12): App\Models\productosModel->getProductos()
+#8 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/CodeIgniter.php(933): App\Controllers\productosController->index()
+#9 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#10 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/u404308406/domains/roprogrammer.online/public_html/index.php(56): CodeIgniter\Boot::bootWeb()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Database/BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/app/Models/productosModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/app/Controllers/productosController.php(12): App\Models\productosModel->getProductos()
+#7 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/CodeIgniter.php(933): App\Controllers\productosController->index()
+#8 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/u404308406/domains/roprogrammer.online/codeignater_proyecto/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/u404308406/domains/roprogrammer.online/public_html/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+CRITICAL - 2024-06-27 18:36:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/productosModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/productosController.php(12): App\Models\productosModel->getProductos()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\productosController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
