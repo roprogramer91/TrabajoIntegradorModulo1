@@ -1,31 +1,29 @@
-/* styles.css */
-
-/* Estilos generales */
+/* general */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Fondo gris claro */
+    background-color: #f0f0f0; 
     padding: 20px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    min-height: 100vh; /* Para ocupar al menos todo el alto de la pantalla */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
 }
 
-/* Estilo del contenedor principal */
+/* contenedor principal */
 .container {
-    max-width: 600px; /* Ancho máximo del contenido */
+    max-width: 600px; 
     width: 100%;
-    background-color: #fff; /* Fondo blanco */
+    background-color: #fff; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilo de la cabecera */
+/* cabecera */
 h1 {
-    background-color: #3b5998; /* Azul de Facebook */
+    background-color: #3b5998; 
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -34,33 +32,33 @@ h1 {
     margin-top: 0;
 }
 
-/* Estilo de la lista */
+/* lista */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Estilo de cada elemento de lista */
+/* elemento de lista */
 li {
     padding: 10px;
-    border-bottom: 1px solid #ddd; /* Línea separadora gris */
+    border-bottom: 1px solid #ddd; 
     display: flex;
     justify-content: space-between;
 }
 
 
-/* Estilo para el título dentro de la lista */
+/* título de la lista */
 li strong {
-    color: #3b5998; /* Azul de Facebook */
+    color: #3b5998; 
 }
 
 
 .btn-lista {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #1877f2; /* Azul similar a Facebook */
-    color: #ffffff; /* Texto blanco */
-    text-decoration: none; /* Quitar subrayado si es un enlace */
+    background-color: #1877f2; 
+    color: #ffffff; 
+    text-decoration: none; 
     text-align: center;
     border: none;
     border-radius: 5px;
@@ -70,11 +68,11 @@ li strong {
 }
 
 .btn-lista:hover {
-    background-color: #0e5a94; /* Cambio de color al pasar el mouse */
+    background-color: #0e5a94; 
 }
 
 @media (max-width: 768px) {
     .btn-lista {
-        font-size: 14px; /* Tamaño de fuente más pequeño en dispositivos móviles */
+        font-size: 14px; 
     }
 }
